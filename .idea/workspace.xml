@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="43111080-54b2-4fc2-b107-d96b9badbd16" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/esthete-charts/esthete-core-chart/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esthete-charts/esthete-user-chart/Chart.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esthete-charts/esthete-user-chart/templates/deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/esthete-charts/esthete-user-chart/values.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/esthete-charts/esthete-core-chart/templates/deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/esthete-charts/esthete-core-chart/templates/deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/esthete-charts/esthete-core-chart/values.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/esthete-charts/esthete-core-chart/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,16 +13,21 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="deployment-core" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "contexts": [
+  <component name="KubernetesApiProvider">{
+  &quot;contexts&quot;: [
     {
-      "name": "arn:aws:eks:ap-northeast-2:387007409584:cluster/EKS2"
+      &quot;name&quot;: &quot;arn:aws:eks:ap-northeast-2:387007409584:cluster/EKS2&quot;
     }
   ],
-  "isMigrated": true
-}]]></component>
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="arn:aws:eks:ap-northeast-2:387007409584:cluster/EKS2" />
     <option name="helmParameters">
@@ -48,29 +48,29 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2XgpDWNnq9a4qujY5poF9Z1zAJq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "deployment-core",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;deployment&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/esthete-charts" />
@@ -84,7 +84,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1699060457511</updated>
-      <workItem from="1699060459223" duration="13933000" />
+      <workItem from="1699060459223" duration="16157000" />
+      <workItem from="1699085641289" duration="467000" />
     </task>
     <servers />
   </component>
