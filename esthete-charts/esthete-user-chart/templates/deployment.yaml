@@ -3,19 +3,11 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "esthete-user-chart.fullname" . }}
-  labels:
-    {{- include "esthete-user-chart.labels" . | nindent 4 }}
+  name: user-service
   namespace: default
+
 spec:
-  replicas: {{ .Values.replicaCount }}
-  selector:
-    matchLabels:
-      {{- include "esthete-user-chart.selectorLabels" . | nindent 6 }}
   template:
-    metadata:
-      labels:
-        {{- include "esthete-user-chart.labels" . | nindent 8 }}
     spec:
       containers:
         - name: {{ .Chart.Name }}

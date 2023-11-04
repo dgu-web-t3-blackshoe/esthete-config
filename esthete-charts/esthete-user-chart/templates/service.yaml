@@ -1,16 +1,23 @@
-apiVersion: v1
+# esthete-deployment-chart/templates/deployment.yaml
+
+apiVersion: apps/v1
 kind: Service
 metadata:
-  name: {{ include "esthete-user-chart.fullname" . }}
-  labels:
-    {{- include "esthete-user-chart.labels" . | nindent 4 }}
+  name: user-service
   namespace: default
 spec:
-  type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - name: http
+      nodePort: 30808
+      port: 8080
       protocol: TCP
-      name: http
+      targetPort: 8080
+    - name: mysql
+      nodePort: 30069
+      port: 3306
+      protocol: TCP
+      targetPort: 3306
   selector:
-    {{- include "esthete-user-chart.selectorLabels" . | nindent 4 }}
+    app: user-service
+  sessionAffinity: None
+  type: {{ .Values.service.type }}
