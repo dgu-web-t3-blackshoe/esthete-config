@@ -9,9 +9,12 @@ replicaCount: 1
 image:
   repository: lsb8375/esthete-user-service
   tag: 1.1
-  pullPolicy: IfNotPresent
 
 containerPort: 8080
 
 service:
   type: LoadBalancer
+
+
+ingress:
+  enabled: true
