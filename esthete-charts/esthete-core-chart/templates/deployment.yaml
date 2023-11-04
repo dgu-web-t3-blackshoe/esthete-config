@@ -3,23 +3,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "esthete-core-chart.fullname" . }}
-  labels:
-    {{- include "esthete-core-chart.labels" . | nindent 4 }}
+  name: core-service
   namespace: default
 spec:
-  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      {{- include "esthete-core-chart.selectorLabels" . | nindent 6 }}
+      app: core-service
   template:
     metadata:
       labels:
-        {{- include "esthete-core-chart.labels" . | nindent 8 }}
+        app: core-service
     spec:
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-          imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - containerPort: {{ .Values.containerPort }}
