@@ -12,9 +12,6 @@ image:
 
 containerPort: 8080
 
-service:
-  type: LoadBalancer
-
 
 ingress:
   enabled: true
