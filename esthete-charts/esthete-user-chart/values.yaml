@@ -12,6 +12,5 @@ image:
 
 containerPort: 8080
 
-
 ingress:
   enabled: true
