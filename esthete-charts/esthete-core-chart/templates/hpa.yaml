@@ -5,6 +5,7 @@ metadata:
   name: {{ include "esthete-core-chart.fullname" . }}
   labels:
     {{- include "esthete-core-chart.labels" . | nindent 4 }}
+  namespace: default
 spec:
   scaleTargetRef:
     apiVersion: apps/v1

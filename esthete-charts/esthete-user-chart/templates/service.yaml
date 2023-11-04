@@ -4,6 +4,7 @@ metadata:
   name: {{ include "esthete-user-chart.fullname" . }}
   labels:
     {{- include "esthete-user-chart.labels" . | nindent 4 }}
+  namespace: default
 spec:
   type: {{ .Values.service.type }}
   ports:
