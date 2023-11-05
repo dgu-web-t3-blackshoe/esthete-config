@@ -8,8 +8,8 @@
 replicaCount: 1
 
 image:
-  repository: lsb8375/esthete-core-service
-  tag: 1.2
+  repository: lsb8375/esthete-core
+  tag: 1.1
 
 containerPort: 8080
 
