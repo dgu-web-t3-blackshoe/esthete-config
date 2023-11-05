@@ -15,7 +15,23 @@ spec:
         app: user-service
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: { { .Chart.Name } }
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          env:
+            - name: AWS_ACCESS_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: core-config
+                  key: AWS_ACCESS_KEY
+            - name: AWS_SECRET_KEY
+              valueFrom:
+                configMapKeyRef:
+                  name: core-config
+                  key: AWS_SECRET_KEY
+            - name: CLOUDFRONT_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: core-config
+                  key: CLOUDFRONT_URL
           ports:
-            - containerPort: {{ .Values.containerPort }}
+            - containerPort: { { .Values.containerPort } }

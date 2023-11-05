@@ -15,7 +15,13 @@ spec:
         app: core-service
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: { { .Chart.Name } }
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          #env:
+          #            - name: AWS_ACCESS_KEY
+          #              valueFrom:
+          #                configMapKeyRef:
+          #                  name: user-config
+          #                  key: AWS_ACCESS_KEY
           ports:
-            - containerPort: {{ .Values.containerPort }}
+            - containerPort: { { .Values.containerPort } }
