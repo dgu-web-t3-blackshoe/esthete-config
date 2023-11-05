@@ -15,8 +15,9 @@ spec:
         app: user-service
     spec:
       containers:
-        - name: { { .Chart.Name } }
-          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        - image: lsb8375/esthete-core:1.2
+          imagePullPolicy: IfNotPresent
+          name: esthete-core-chart
           env:
             - name: AWS_ACCESS_KEY
               valueFrom:
