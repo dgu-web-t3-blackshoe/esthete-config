@@ -15,7 +15,7 @@ spec:
         app: user-service
     spec:
       containers:
-        - image: lsb8375/esthete-core:1.2
+        - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: IfNotPresent
           name: esthete-core-chart
           env:
@@ -35,4 +35,4 @@ spec:
                   name: core-config
                   key: CLOUDFRONT_URL
           ports:
-            - containerPort: { { .Values.containerPort } }
+            - containerPort: "{{ .Values.containerPort }}"
