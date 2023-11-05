@@ -20,4 +20,4 @@ spec:
           name:  esthete-user-chart
 
           ports:
-            - containerPort: "{{ .Values.containerPort }}"
+            - containerPort: {{ .Values.containerPort }}
