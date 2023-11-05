@@ -17,22 +17,7 @@ spec:
       containers:
         - image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: IfNotPresent
-          name: esthete-core-chart
-          env:
-            - name: AWS_ACCESS_KEY
-              valueFrom:
-                configMapKeyRef:
-                  name: core-config
-                  key: AWS_ACCESS_KEY
-            - name: AWS_SECRET_KEY
-              valueFrom:
-                configMapKeyRef:
-                  name: core-config
-                  key: AWS_SECRET_KEY
-            - name: CLOUDFRONT_URL
-              valueFrom:
-                configMapKeyRef:
-                  name: core-config
-                  key: CLOUDFRONT_URL
+          name:  esthete-user-chart
+
           ports:
             - containerPort: "{{ .Values.containerPort }}"
