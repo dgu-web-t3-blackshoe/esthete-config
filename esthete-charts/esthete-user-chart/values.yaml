@@ -9,7 +9,7 @@ replicaCount: 1
 
 image:
   repository: lsb8375/esthete-user
-  tag: "2.3"
+  tag: "2.4"
 
 containerPort: 8080
 
