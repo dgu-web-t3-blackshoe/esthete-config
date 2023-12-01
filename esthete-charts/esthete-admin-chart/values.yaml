@@ -1,0 +1,22 @@
+
+# Default values for esthete-admin-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+# esthete-deployment-chart/values.yaml
+
+replicaCount: 1
+
+image:
+  repository: lsb8375/esthete-admin
+  tag: 1.0
+
+containerPort: 8080
+
+ingress:
+  enabled: true
+
+controller:
+  ## Argo controller commandline flags
+  args:
+    appResyncPeriod: "60"
