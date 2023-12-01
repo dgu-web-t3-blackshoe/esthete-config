@@ -3,19 +3,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: core-service
+  name: admin-service
   namespace: default
 spec:
   selector:
     matchLabels:
-      app: core-service
+      app: admin-service
   template:
     metadata:
       labels:
-        app: core-service
+        app: admin-service
     spec:
       containers:
-        - name: esthete-core-chart
+        - name: esthete-admin-chart
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: {{ .Values.containerPort }}
