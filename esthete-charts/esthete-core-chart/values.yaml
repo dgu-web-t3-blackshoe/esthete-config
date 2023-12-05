@@ -5,12 +5,9 @@
 
 # esthete-deployment-chart/values.yaml
 
-spec:
-  replicas: 2
-
 image:
   repository: lsb8375/esthete-core
-  tag: "8.5"
+  tag: "8.6"
 
 containerPort: 8080
 
