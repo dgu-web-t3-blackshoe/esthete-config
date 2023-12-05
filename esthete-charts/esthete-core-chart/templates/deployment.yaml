@@ -6,6 +6,7 @@ metadata:
   name: core-service
   namespace: default
 spec:
+  replicas: 2
   selector:
     matchLabels:
       app: core-service
