@@ -5,11 +5,12 @@
 
 # esthete-deployment-chart/values.yaml
 
-replicaCount: 2
+spec:
+  replicas: 2
 
 image:
   repository: lsb8375/esthete-core
-  tag: "8.2"
+  tag: "8.5"
 
 containerPort: 8080
 
@@ -19,4 +20,4 @@ ingress:
 controller:
   ## Argo controller commandline flags
   args:
-    appResyncPeriod: "60"
+    appResyncPeriod: 60
