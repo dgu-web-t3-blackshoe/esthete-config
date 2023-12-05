@@ -5,11 +5,11 @@
 
 # esthete-deployment-chart/values.yaml
 
-replicaCount: 1
+replicaCount: 2
 
 image:
   repository: lsb8375/esthete-core
-  tag: "7.7"
+  tag: "7.8"
 
 containerPort: 8080
 
