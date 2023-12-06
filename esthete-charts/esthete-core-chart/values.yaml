@@ -7,7 +7,7 @@
 
 image:
   repository: lsb8375/esthete-core
-  tag: "10.6"
+  tag: "10.7"
 
 containerPort: 8080
 
